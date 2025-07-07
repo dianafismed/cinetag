@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
+import logo from "./logo.png";
+import styles from "./Cabecalho.module.css";
 
 function Cabecalho() {
   return (
-    <header className={StyleSheet.cabecalho}>
-      <Link to={"/"} className={StyleSheet.logo}>
-        <img src="/logo.png" alt="Cinetag Logo" />
+    <header className={styles.cabecalho}>
+      <Link to="./">
+        <img src={logo} alt="Cinetag Logo" />
       </Link>
-
+      <nav>
+      </nav>
     </header>
   );
 }
