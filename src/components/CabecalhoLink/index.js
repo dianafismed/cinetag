@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 
 function CabecalhoLink() {
   return (
-    <link></link>>
+    <Link></Link>
   );
 }
 
