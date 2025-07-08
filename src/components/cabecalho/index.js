@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
 import styles from "./Cabecalho.module.css";
+import CabecalhoLink from "components/CabecalhoLink";
 
 function Cabecalho() {
   return (
@@ -9,6 +10,9 @@ function Cabecalho() {
         <img src={logo} alt="Cinetag Logo" />
       </Link>
       <nav>
+        <CabecalhoLink url="./">Home</CabecalhoLink>
+        <CabecalhoLink url="./favoritos">Favoritos</CabecalhoLink>
+
       </nav>
     </header>
   );

@@ -1,7 +1,9 @@
+import Cabecalho from "components/Cabecalho";
+
 function Inicio() {
   return (
     <div className="inicio">
-      <h1>Bem-vindo ao Cinetag</h1>
+      <Cabecalho />
     </div>
   );
 }
