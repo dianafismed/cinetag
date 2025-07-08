@@ -1,10 +1,12 @@
 import Cabecalho from "components/Cabecalho";
+import Rodape from "components/Rodape";
 
 function Inicio() {
   return (
-    <div className="inicio">
+    <>
       <Cabecalho />
-    </div>
+      <Rodape />
+    </>
   );
 }
 
