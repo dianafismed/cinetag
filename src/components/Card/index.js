@@ -7,7 +7,7 @@ function Card({ id, titulo, capa }) {
       <img src={capa} alt={titulo} className={styles.capa} />
       <h2>{titulo}</h2>
       <img src={iconeFavoritar}
-        alt="Favoritar filme"
+        alt="Favoritar"
         className={styles.favoritar} />
     </div>
 
