@@ -14,8 +14,8 @@ function Card({ id, titulo, capa }) {
       <img src={capa} alt={titulo} className={styles.capa} />
       <h2>{titulo}</h2>
       <img src={icone}
-        alt="Favoritar"
-        className={styles.favoritar}
+        alt="Favoritar filme"
+        className={styles.favorito}
         onClick={() => {
           adicionarFavorito({ id, titulo, capa })
         }}
