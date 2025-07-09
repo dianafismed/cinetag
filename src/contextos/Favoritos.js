@@ -14,12 +14,11 @@ export default function FavoritosProvider({ children }) {
   )
 }
 
-// Função de favoritar ou desfavoritar um item
 export function useFavoritoContext() {
   const { favorito, setFavorito } = useContext(FavoritosContext);
 
   function adicionarFavorito(novoFavorito) {
-    const favoritoRepetido = favorito.some(item => item.id === novoFavorito.id)
+    const favoritoRepetido = favorito.some(item => item.id === novoFavorito.id);
 
     let novaLista = [...favorito];
 
