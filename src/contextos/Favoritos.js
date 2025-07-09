@@ -5,6 +5,7 @@ FavoritosContext.displayName = "Favoritos";
 
 export default function FavoritosProvider({ children }) {
   const [favorito, setFavorito] = useState([]);
+  console.log(favorito)
 
   return (
     <FavoritosContext.Provider
@@ -24,11 +25,16 @@ export function useFavoritoContext() {
 
     if (!favoritoRepetido) {
       novaLista.push(novoFavorito);
-      return setFavorito(novaLista);
+      setFavorito(novaLista);
+      console.log('Favoritos atualizados:', novaLista);
+      return novaLista;
+      
     }
 
     novaLista.splice(novaLista.indexOf(novoFavorito), 1);
-    return setFavorito(novaLista);
+    setFavorito(novaLista)
+    console.log('Favoritos atualizados:', novaLista);
+    return novaLista;
   }
   return {
     favorito,
