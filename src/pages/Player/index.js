@@ -6,7 +6,6 @@ import NaoEncontrada from 'pages/NaoEncontrada';
 import { useEffect, useState } from 'react';
 
 function Player() {
-
   const [video, setVideo] = useState();
   const parametros = useParams();
 
@@ -36,8 +35,7 @@ function Player() {
           title={video.titulo}
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+          allowfullscreen></iframe>
       </section>
     </>
   )
