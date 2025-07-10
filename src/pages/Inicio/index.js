@@ -1,7 +1,6 @@
 import Banner from "components/Banner";
 import Card from "components/Card";
 import Titulo from "components/Titulo";
-//import videos from 'json/db.json';
 import styles from './Inicio.module.css';
 import { useEffect, useState } from "react";
 
